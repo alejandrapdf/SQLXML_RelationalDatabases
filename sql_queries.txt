@@ -1,0 +1,37 @@
+USE clb19138;
+
+-- Business Requirement 1. List the ID and name of all employees
+
+SELECT employeeID, name FROM employee;
+
+
+-- Business Requirement 2. List the name of all projects together with their type.
+
+SELECT project.name as project_name, project_type.name AS project_type, projectID
+FROM project
+JOIN project_type ON project.typeID = project_type.typeID;
+
+
+-- Business Requirement 3. List the ID and name of all employees together with the project name and project category that they work on.
+
+SELECT e.employeeID, e.name, p.name as `project_name`, pc.name as `project_category` FROM employee e
+    INNER JOIN current_employee_team et ON e.employeeID = et.employeeID
+    INNER JOIN team t ON et.teamID = t.teamID
+    INNER JOIN project p ON p.projectID = t.projectID
+    INNER JOIN project_category pc ON p.categoryID = pc.categoryID
+WHERE p.projectID = t.projectID;
+
+
+-- Business Requirement 4. List the ID and name of all tasks together with the name and ID of the employee who works on this task
+
+SELECT project_task.taskID as task_id, project_task_type.taskName as task_name, employee.employeeID, employee.name as employee_name FROM project_task
+INNER JOIN team_member ON project_task.taskID = team_member.taskID
+INNER JOIN project_task_type ON project_task.taskID = project_task_type.taskCode
+INNER JOIN employee ON team_member.employeeID = employee.employeeID;
+
+
+-- Business Requirement 5. List the ID and name of all employees together with the office number that they are based in.
+
+SELECT employee.employeeID, employee.name as employee_name, office.officeNumber as office_number
+FROM employee
+JOIN office ON employee.officeID = office.officeID;

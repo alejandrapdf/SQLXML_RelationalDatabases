@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE company [
+        <!ELEMENT company (departmentList, employeeList, employeeRoleList, jobList, monthList, officeList, projectList, projectCategoryList, projectRecordList, projectTaskList, projectTaskTypeList, projectTypeList, roleList, teamList)>
+
+        <!ELEMENT departmentList (department+)>
+        <!ELEMENT department (departmentName)>
+        <!ELEMENT departmentID (#PCDATA)>
+        <!ELEMENT departmentName (#PCDATA)>
+
+        <!ELEMENT employeeList (employee+)>
+        <!ELEMENT employee (name, jobID, officeID, departmentID)>
+        <!ELEMENT name (#PCDATA)>
+        <!ELEMENT jobID (#PCDATA)>
+        <!ELEMENT officeID (#PCDATA)>
+
+        <!ELEMENT employeeRoleList (employeeRole+)>
+        <!ELEMENT employeeRole (roleID+, employeeID)>
+        <!ELEMENT roleID (#PCDATA)>
+        <!ELEMENT employeeID (#PCDATA)>
+
+        <!ELEMENT jobList (job+)>
+        <!ELEMENT job (jobID, jobType)>
+        <!ELEMENT jobType (#PCDATA)>
+
+        <!ELEMENT monthList (month+)>
+        <!ELEMENT month (monthID, monthName)>
+        <!ELEMENT monthID (#PCDATA)>
+        <!ELEMENT monthName (#PCDATA)>
+
+        <!ELEMENT officeList (office+)>
+        <!ELEMENT office (officeID, officeLocation, officeNumber)>
+        <!ELEMENT officeLocation (#PCDATA)>
+        <!ELEMENT officeNumber (#PCDATA)>
+
+        <!ELEMENT projectList (project+)>
+        <!ELEMENT project (projectID, name, categoryID, typeID)>
+        <!ELEMENT projectID (#PCDATA)>
+        <!ELEMENT categoryID (#PCDATA)>
+        <!ELEMENT typeID (#PCDATA)>
+
+        <!ELEMENT projectCategoryList (projectCategory+)>
+        <!ELEMENT projectCategory (categoryID, name)>
+
+        <!ELEMENT projectRecordList (projectRecord+)>
+        <!ELEMENT projectRecord (projectRecordID, projectID, monthID, taskId, completionPercentage)>
+        <!ELEMENT projectRecordID (#PCDATA)>
+        <!ELEMENT taskId (#PCDATA)>
+        <!ELEMENT completionPercentage (#PCDATA)>
+
+        <!ELEMENT projectTaskList (projectTask+)>
+        <!ELEMENT projectTask (taskID, taskType, taskWeight)>
+        <!ELEMENT taskID (#PCDATA)>
+        <!ELEMENT taskType (#PCDATA)>
+        <!ELEMENT taskWeight (#PCDATA)>
+
+        <!ELEMENT projectTaskTypeList (projectTaskType+)>
+        <!ELEMENT projectTaskType (taskCode, taskName)>
+        <!ELEMENT taskCode (#PCDATA)>
+        <!ELEMENT taskName (#PCDATA)>
+
+        <!ELEMENT projectTypeList (projectType+)>
+        <!ELEMENT projectType (typeID, name)>
+
+        <!ELEMENT roleList (role+)>
+        <!ELEMENT role (roleID, roleName, jobID)>
+        <!ELEMENT roleName (#PCDATA)>
+
+        <!ELEMENT teamList (team+)>
+        <!ELEMENT team (teamID, team_formed_on, projectID, managerID)>
+        <!ELEMENT teamID (#PCDATA)>
+        <!ELEMENT team_formed_on (#PCDATA)>
+        <!ELEMENT managerID (#PCDATA)>
+
+        <!ELEMENT teamMemberList (teamMember+)>
+        <!ELEMENT teamMember (teamID, taskID)>
+
+        <!ATTLIST department
+                departmentID CDATA #REQUIRED
+                >
+
+        <!ATTLIST employee
+                employeeID CDATA #REQUIRED
+                >
+
+        <!ATTLIST job
+                jobID CDATA #REQUIRED
+                >
+
+        <!ATTLIST month
+                monthID CDATA #REQUIRED
+                >
+
+        <!ATTLIST office
+                officeID CDATA #REQUIRED
+                >
+
+        <!ATTLIST project
+                projectID CDATA #REQUIRED
+                >
+
+        <!ATTLIST projectCategory
+                categoryID CDATA #REQUIRED
+                >
+
+        <!ATTLIST projectRecord
+                projectRecordID CDATA #REQUIRED
+                >
+
+        <!ATTLIST projectTask
+                taskID CDATA #REQUIRED
+                >
+
+        <!ATTLIST projectTaskType
+                taskCode CDATA #REQUIRED
+                >
+
+        <!ATTLIST projectType
+                typeID CDATA #REQUIRED
+                >
+
+        <!ATTLIST role
+                roleID CDATA #REQUIRED
+                >
+
+        <!ATTLIST team
+                teamID CDATA #REQUIRED
+                >
+
+        <!ATTLIST teamMember
+                teamID CDATA #REQUIRED
+                employeeID CDATA #REQUIRED
+                >
+        ]>
+
+<company>
+    <departmentList>
+        <department departmentID="1">
+            <departmentName>"Engineering"</departmentName>
+        </department>
+        <department departmentID="2">
+            <departmentName>Admin</departmentName>
+        </department>
+        <department departmentID="3">
+            <departmentName>HR</departmentName>
+        </department>
+        <department departmentID="4">
+            <departmentName>Marketing</departmentName>
+        </department>
+    </departmentList>
+    <employeeList>
+        <employee employeeID="0dd9255b-8178-46c1-9842-341474cd18bf">
+            <name>Katherine Jones</name>
+            <jobID>2</jobID>
+            <officeID>3</officeID>
+            <departmentID>1</departmentID>
+        </employee>
+        <employee employeeID="197a15a8-e9c7-47a3-9427-129be93b05f2">
+            <name>Donald Chamberlin</name>
+            <jobID>2</jobID>
+            <officeID>2</officeID>
+            <departmentID>1</departmentID>
+        </employee>
+        <employee employeeID="2d44de0c-e3cd-436c-90b4-75c9b94cb464">
+            <name>Lucy Bain</name>
+            <jobID>2</jobID>
+            <officeID>3</officeID>
+            <departmentID>1</departmentID>
+        </employee>
+        <employee employeeID="7ee3b93b-0232-4c47-bcf8-a22e4aadcdad">
+            <name>John Carmichael</name>
+            <jobID>2</jobID>
+            <officeID>3</officeID>
+            <departmentID>1</departmentID>
+        </employee>
+        <employee employeeID="8d2687fc-beda-41b4-8b42-a19d0b4f404f">
+            <name>Nikoli Tesla</name>
+            <jobID>1</jobID>
+            <officeID>1</officeID>
+            <departmentID>2</departmentID>
+        </employee>
+        <employee employeeID="9ba48d84-9eb8-41a9-9229-2859719421d2">
+            <name>Peter Kay</name>
+            <jobID>2</jobID>
+            <officeID>2</officeID>
+            <departmentID>1</departmentID>
+        </employee>
+        <employee employeeID="bd506395-5669-47d6-8fd5-28dd4fa600ed">
+            <name>Ada Lovelace</name>
+            <jobID>1</jobID>
+            <officeID>1</officeID>
+            <departmentID>3</departmentID>
+        </employee>
+        <employee employeeID="cd95b2ef-29ff-4b4c-9ede-dee8539c1a4b">
+            <name>Raymond Boyce</name>
+            <jobID>2</jobID>
+            <officeID>2</officeID>
+            <departmentID>1</departmentID>
+        </employee>
+        <employee employeeID="e3f9767a-a559-48e9-9f7a-ba22dae94950">
+            <name>Alan Turing</name>
+            <jobID>1</jobID>
+            <officeID>1</officeID>
+            <departmentID>4</departmentID>
+        </employee>
+        <employee employeeID="f0629e8d-2569-4ca6-b5c9-4bd75cf6bacc">
+            <name>Michael Bubble</name>
+            <jobID>2</jobID>
+            <officeID>2</officeID>
+            <departmentID>1</departmentID>
+        </employee>
+    </employeeList>
+    <employeeRoleList>
+        <employeeRole>
+            <roleID>1</roleID>
+            <roleID>4</roleID>
+            <employeeID>0dd9255b-8178-46c1-9842-341474cd18bf</employeeID>
+        </employeeRole>
+        <employeeRole>
+            <roleID>1</roleID>
+            <roleID>4</roleID>
+            <employeeID>197a15a8-e9c7-47a3-9427-129be93b05f2</employeeID>
+        </employeeRole>
+        <employeeRole>
+            <roleID>5</roleID>
+            <employeeID>2d44de0c-e3cd-436c-90b4-75c9b94cb464</employeeID>
+        </employeeRole>
+        <employeeRole>
+            <roleID>1</roleID>
+            <employeeID>7ee3b93b-0232-4c47-bcf8-a22e4aadcdad</employeeID>
+        </employeeRole>
+        <employeeRole>
+            <roleID>2</roleID>
+            <employeeID>8d2687fc-beda-41b4-8b42-a19d0b4f404f</employeeID>
+        </employeeRole>
+        <employeeRole>
+            <roleID>5</roleID>
+            <employeeID>9ba48d84-9eb8-41a9-9229-2859719421d2</employeeID>
+        </employeeRole>
+        <employeeRole>
+            <roleID>2</roleID>
+            <employeeID>bd506395-5669-47d6-8fd5-28dd4fa600ed</employeeID>
+        </employeeRole>
+        <employeeRole>
+            <roleID>1</roleID>
+            <employeeID>cd95b2ef-29ff-4b4c-9ede-dee8539c1a4b</employeeID>
+        </employeeRole>
+        <employeeRole>
+            <roleID>3</roleID>
+            <employeeID>e3f9767a-a559-48e9-9f7a-ba22dae94950</employeeID>
+        </employeeRole>
+        <employeeRole>
+            <roleID>1</roleID>
+            <employeeID>f0629e8d-2569-4ca6-b5c9-4bd75cf6bacc</employeeID>
+        </employeeRole>
+    </employeeRoleList>
+    <jobList>
+        <job jobID="">
+            <jobID></jobID>
+            <jobType></jobType>
+        </job>
+    </jobList>
+    <monthList>
+        <month monthID="">
+            <monthID></monthID>
+            <monthName></monthName>
+        </month>
+    </monthList>
+    <officeList>
+        <office officeID="">
+            <officeID></officeID>
+            <officeLocation></officeLocation>
+            <officeNumber></officeNumber>
+        </office>
+    </officeList>
+    <projectList>
+        <project projectID="">
+            <projectID></projectID>
+            <name></name>
+            <categoryID></categoryID>
+            <typeID></typeID>
+        </project>
+    </projectList>
+    <projectCategoryList>
+        <projectCategory categoryID="">
+            <categoryID></categoryID>
+            <name></name>
+        </projectCategory>
+    </projectCategoryList>
+    <projectRecordList>
+        <projectRecord projectRecordID="">
+            <projectRecordID></projectRecordID>
+            <projectID></projectID>
+            <monthID></monthID>
+            <taskId></taskId>
+            <completionPercentage></completionPercentage>
+        </projectRecord>
+    </projectRecordList>
+    <projectTaskList>
+        <projectTask taskID="">
+            <taskID></taskID>
+            <taskType></taskType>
+            <taskWeight></taskWeight>
+        </projectTask>
+    </projectTaskList>
+    <projectTaskTypeList>
+        <projectTaskType taskCode="">
+            <taskCode></taskCode>
+            <taskName></taskName>
+        </projectTaskType>
+    </projectTaskTypeList>
+    <projectTypeList>
+        <projectType typeID="">
+            <typeID></typeID>
+            <name></name>
+        </projectType>
+    </projectTypeList>
+    <roleList>
+        <role roleID="">
+            <roleID></roleID>
+            <roleName></roleName>
+            <jobID></jobID>
+        </role>
+    </roleList>
+    <teamList>
+        <team teamID="">
+            <teamID></teamID>
+            <team_formed_on></team_formed_on>
+            <projectID></projectID>
+            <managerID></managerID>
+        </team>
+    </teamList>
+</company>

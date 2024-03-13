@@ -1,0 +1,38 @@
+//Business Requirement 1. List the ID and name of all employees
+for $employee in //employee
+    return concat("ID: ", $employee/@id, ", Name: ", $employee/name)
+
+
+//Business Requirement 2. List the name of all projects together with their type.
+for $project in //project
+    let $types := //project_types
+    return concat("Name: ", $project/name, ", Type: ", $types/project_type[@type_code=$project/@type_code]/name)
+
+
+//Business Requirement 3. List the ID and name of all employees together with the project name and project category that they work on.
+for $team in //team
+  let $project := $team/project
+  for $employee in //employee[@id=$project//employeeref/@refid]
+  	return concat(
+    	"Employee ID: ", $employee/@id,
+        ", Employee Name: ", $employee/name,
+        ", Project Name: ", $project/name,
+        ", Project Category: ", $project/@category
+    )
+
+//Business Requirement 4. List the ID and name of all tasks together with the name and ID of the employee who works on this task
+for $task in //project_task
+	let $employee := //employee[@id=$task/employeeref/@refid]
+    let $task_details := //task_type[@task_code=$task/taskref/@task_code]
+	return concat(
+    	"Task ID: ", $task/@id,
+        ", Task Name: ", $task_details/name,
+        ", Employee ID: ", $employee/@id,
+        ", Employee Name: ", $employee/name
+    )
+
+
+//Business Requirement 5. List the ID and name of all employees together with the office number that they are based in.
+for $employee in //employee
+	let $office := //office[@id=$employee/officeref/@refid]
+	return concat("Employee ID: ", $employee/@id, ", Name: ", $employee/name, ", Office Number: ", $office/number)

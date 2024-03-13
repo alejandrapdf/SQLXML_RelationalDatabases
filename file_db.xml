@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE company [
+        <!ELEMENT name (#PCDATA)>
+        <!ELEMENT number (#PCDATA)>
+
+        <!ELEMENT company (departments, teams, project_types, task_types, offices)>
+
+        <!ELEMENT department (employees)>
+        <!ATTLIST department id ID #REQUIRED>
+
+        <!ELEMENT departments (department*)>
+
+        <!ELEMENT employee (name, (admin_job|software_job), officeref)>
+        <!ATTLIST employee id ID #REQUIRED>
+
+        <!ELEMENT admin_job EMPTY>
+        <!ATTLIST admin_job role (finance|payroll|sales) #REQUIRED>
+
+        <!ELEMENT software_job EMPTY>
+        <!ATTLIST software_job role (backend|frontend|full_stack) #REQUIRED>
+        <!ATTLIST software_job admin_role (project_manager) #IMPLIED>
+
+        <!ELEMENT employees (employee*)>
+
+        <!ELEMENT project (name, project_tasks, project_record)>
+        <!ATTLIST project id ID #REQUIRED>
+        <!ATTLIST project type_code IDREF #REQUIRED>
+        <!ATTLIST project category (Educational|Enterprise|Government) #REQUIRED>
+
+        <!ELEMENT project_type (name)>
+        <!ATTLIST project_type type_code ID #REQUIRED>
+
+        <!ELEMENT project_types (project_type)+>
+
+        <!ELEMENT projects (project*)>
+
+
+        <!ELEMENT project_record (project_record_entry*)>
+
+        <!ELEMENT project_record_entry EMPTY>
+        <!ATTLIST project_record_entry monthId (1|2|3|4|5|6|7|8|9|10|11|12) #REQUIRED>
+        <!ATTLIST project_record_entry taskId IDREF #REQUIRED>
+        <!ATTLIST project_record_entry completion_percentage CDATA #REQUIRED>
+
+        <!ELEMENT project_task (employeeref, taskref)>
+        <!ATTLIST project_task id ID #REQUIRED>
+        <!ATTLIST project_task weight (1|2|3|4|5) #REQUIRED>
+
+        <!ELEMENT project_tasks (project_task*)>
+
+        <!ELEMENT task_type (name)>
+        <!ATTLIST task_type task_code ID #REQUIRED>
+
+        <!ELEMENT task_types (task_type+)>
+
+        <!ELEMENT team (project)>
+
+        <!ELEMENT teams (team*)>
+
+        <!ELEMENT office (number)>
+        <!ATTLIST office id ID #REQUIRED>
+
+        <!ELEMENT offices (office*)>
+
+        <!-- References -->
+        <!ELEMENT employeeref EMPTY>
+        <!ATTLIST employeeref refid IDREF #REQUIRED>
+        <!ELEMENT taskref EMPTY>
+        <!ATTLIST taskref task_code IDREF #REQUIRED>
+        <!ELEMENT officeref EMPTY>
+        <!ATTLIST officeref refid IDREF #REQUIRED>
+        ]>
+
+<company>
+    <departments>
+        <department id="d1">
+            <employees>
+                <employee id="e1">
+                    <name>Nikola Tesla</name>
+                    <admin_job role="payroll"/>
+                    <officeref refid="OfficeA"/>
+                </employee>
+                <employee id="e2">
+                    <name>Dave Tesla</name>
+                    <software_job role="backend"/>
+                    <officeref refid="OfficeA"/>
+                </employee>
+                <employee id="e3">
+                    <name>Owen Tesla</name>
+                    <software_job role="frontend"/>
+                    <officeref refid="OfficeA"/>
+                </employee>
+                <employee id="e4">
+                    <name>Mark Tesla</name>
+                    <software_job role="full_stack" admin_role="project_manager"/>
+                    <officeref refid="OfficeB"/>
+                </employee>
+            </employees>
+        </department>
+    </departments>
+
+    <teams>
+        <team>
+            <project id="p1" category="Enterprise" type_code="desktop">
+                <name>Cerberus</name>
+                <project_tasks>
+                    <project_task id="p1t1" weight="2" >
+                        <employeeref refid="e1"/>
+                        <taskref task_code="frontend_dev" />
+                    </project_task>
+                    <project_task id="p1t2" weight="3">
+                        <employeeref refid="e2"/>
+                        <taskref task_code="frontend_design" />
+                    </project_task>
+                    <project_task id="p1t3" weight="4">
+                        <employeeref refid="e3"/>
+                        <taskref task_code="backend_dev" />
+                    </project_task>
+                    <project_task id="p1t4" weight="5">
+                        <employeeref refid="e4"/>
+                        <taskref task_code="backend_design" />
+                    </project_task>
+                </project_tasks>
+                <project_record>
+                    <project_record_entry monthId="1" taskId="p1t1" completion_percentage="15"/>
+                    <project_record_entry monthId="2" taskId="p1t1" completion_percentage="25"/>
+                    <project_record_entry monthId="3" taskId="p1t1" completion_percentage="30"/>
+
+                    <project_record_entry monthId="1" taskId="p1t2" completion_percentage="27"/>
+                    <project_record_entry monthId="2" taskId="p1t2" completion_percentage="11"/>
+                    <project_record_entry monthId="3" taskId="p1t2" completion_percentage="45"/>
+
+                    <project_record_entry monthId="2" taskId="p1t3" completion_percentage="85"/>
+                    <project_record_entry monthId="1" taskId="p1t3" completion_percentage="5"/>
+                    <project_record_entry monthId="3" taskId="p1t3" completion_percentage="10"/>
+
+                    <project_record_entry monthId="1" taskId="p1t4" completion_percentage="13"/>
+                    <project_record_entry monthId="2" taskId="p1t4" completion_percentage="27"/>
+                    <project_record_entry monthId="3" taskId="p1t4" completion_percentage="55"/>
+                </project_record>
+            </project>
+        </team>
+    </teams>
+
+    <project_types>
+        <project_type type_code="desktop">
+            <name>Desktop App</name>
+        </project_type>
+        <project_type type_code="web">
+            <name>Web App</name>
+        </project_type>
+        <project_type type_code="mobile">
+            <name>Mobile App</name>
+        </project_type>
+    </project_types>
+
+    <task_types>
+        <task_type task_code="frontend_dev">
+            <name>Frontend Development</name>
+        </task_type>
+        <task_type task_code="frontend_design">
+            <name>Frontend Design</name>
+        </task_type>
+        <task_type task_code="backend_dev">
+            <name>Backend Development</name>
+        </task_type>
+        <task_type task_code="backend_design">
+            <name>Backend Design</name>
+        </task_type>
+    </task_types>
+
+    <offices>
+        <office id="OfficeA">
+            <number>13</number>
+        </office>
+        <office id="OfficeB">
+            <number>37</number>
+        </office>
+    </offices>
+</company>

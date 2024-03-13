@@ -1,0 +1,2005 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/aleja/ontologies/2024/2/untitled-ontology-7"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/aleja/ontologies/2024/2/untitled-ontology-7">
+    <Prefix name="" IRI="http://www.semanticweb.org/aleja/ontologies/2024/2/untitled-ontology-7"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <ObjectProperty IRI="#isAssignedTo"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#projTask3"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#employee_id"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#job_type"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#projRec3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#proj3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#cat2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#donald"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ProjectRecord"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#jun"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#worksFor"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#project_id"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#feb"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#role_name"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#associatedWith"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#softwareJob"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#member1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#oct"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#eng"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#office_id"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#projTask4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#member8"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Month"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#project_record_id"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasManager"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#proj2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#cat3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#projRec4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#role5"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#composedOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasCategory"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasA"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasTask"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#marketing"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#projTask1"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#task_id"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#lucy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isAssigned"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#projRec5"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#proj1"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Team"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Job"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#peter"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ada"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#job_id"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#member3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#projTask2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#projRec6"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#storesInformationAbout"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#project_type_name"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#month_name"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasAProject"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#sept"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#may"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#apr"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#completion_percentage"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#dec"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#project_name"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#member2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#raymond"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#category_id"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TeamMember"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#techPlaza"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#team_id"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#member5"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#projRec7"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#hr"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#liviTower"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#task_name"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#office_number"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ProjectCategory"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#john"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#role2"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isA"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#worksIn"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#mar"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#name"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#nikoli"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Role"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#team1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#katherine"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#admin"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#projRec8"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#royalCollege"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#role_id"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#category_name"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#office_location"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ProjectTask"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#role1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#member4"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#department_id"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#member7"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Project"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#aug"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#team2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#projRec1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#adminJob"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#department_name"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#role4"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#month_id"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Employee"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#jul"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#member6"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#nov"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#jan"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#projRec2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#michael"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#cat1"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Department"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Office"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#role3"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#type_id"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#task_weight"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#alan"/>
+    </Declaration>
+    <ClassAssertion>
+        <Class IRI="#Employee"/>
+        <NamedIndividual IRI="#ada"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Department"/>
+        <NamedIndividual IRI="#admin"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Job"/>
+        <NamedIndividual IRI="#adminJob"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Employee"/>
+        <NamedIndividual IRI="#alan"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Month"/>
+        <NamedIndividual IRI="#apr"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Month"/>
+        <NamedIndividual IRI="#aug"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ProjectCategory"/>
+        <NamedIndividual IRI="#cat1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ProjectCategory"/>
+        <NamedIndividual IRI="#cat2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ProjectCategory"/>
+        <NamedIndividual IRI="#cat3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Month"/>
+        <NamedIndividual IRI="#dec"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Employee"/>
+        <NamedIndividual IRI="#donald"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Department"/>
+        <NamedIndividual IRI="#eng"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Month"/>
+        <NamedIndividual IRI="#feb"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Department"/>
+        <NamedIndividual IRI="#hr"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Month"/>
+        <NamedIndividual IRI="#jan"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Employee"/>
+        <NamedIndividual IRI="#john"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Month"/>
+        <NamedIndividual IRI="#jul"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Month"/>
+        <NamedIndividual IRI="#jun"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Employee"/>
+        <NamedIndividual IRI="#katherine"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Office"/>
+        <NamedIndividual IRI="#liviTower"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Employee"/>
+        <NamedIndividual IRI="#lucy"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Month"/>
+        <NamedIndividual IRI="#mar"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Department"/>
+        <NamedIndividual IRI="#marketing"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Month"/>
+        <NamedIndividual IRI="#may"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Employee"/>
+        <NamedIndividual IRI="#michael"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Employee"/>
+        <NamedIndividual IRI="#nikoli"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Month"/>
+        <NamedIndividual IRI="#nov"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Month"/>
+        <NamedIndividual IRI="#oct"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Employee"/>
+        <NamedIndividual IRI="#peter"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Project"/>
+        <NamedIndividual IRI="#proj1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Project"/>
+        <NamedIndividual IRI="#proj2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Project"/>
+        <NamedIndividual IRI="#proj3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ProjectRecord"/>
+        <NamedIndividual IRI="#projRec1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ProjectRecord"/>
+        <NamedIndividual IRI="#projRec2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ProjectRecord"/>
+        <NamedIndividual IRI="#projRec3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ProjectRecord"/>
+        <NamedIndividual IRI="#projRec4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ProjectRecord"/>
+        <NamedIndividual IRI="#projRec5"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ProjectRecord"/>
+        <NamedIndividual IRI="#projRec6"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ProjectRecord"/>
+        <NamedIndividual IRI="#projRec7"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ProjectRecord"/>
+        <NamedIndividual IRI="#projRec8"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ProjectTask"/>
+        <NamedIndividual IRI="#projTask1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ProjectTask"/>
+        <NamedIndividual IRI="#projTask2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ProjectTask"/>
+        <NamedIndividual IRI="#projTask3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ProjectTask"/>
+        <NamedIndividual IRI="#projTask4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Employee"/>
+        <NamedIndividual IRI="#raymond"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Role"/>
+        <NamedIndividual IRI="#role1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Role"/>
+        <NamedIndividual IRI="#role2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Role"/>
+        <NamedIndividual IRI="#role3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Role"/>
+        <NamedIndividual IRI="#role4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Role"/>
+        <NamedIndividual IRI="#role5"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Office"/>
+        <NamedIndividual IRI="#royalCollege"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Month"/>
+        <NamedIndividual IRI="#sept"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Job"/>
+        <NamedIndividual IRI="#softwareJob"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Team"/>
+        <NamedIndividual IRI="#team1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Team"/>
+        <NamedIndividual IRI="#team2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Office"/>
+        <NamedIndividual IRI="#techPlaza"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasA"/>
+        <NamedIndividual IRI="#ada"/>
+        <NamedIndividual IRI="#adminJob"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isAssigned"/>
+        <NamedIndividual IRI="#ada"/>
+        <NamedIndividual IRI="#role2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#worksFor"/>
+        <NamedIndividual IRI="#ada"/>
+        <NamedIndividual IRI="#hr"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#worksIn"/>
+        <NamedIndividual IRI="#ada"/>
+        <NamedIndividual IRI="#liviTower"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasA"/>
+        <NamedIndividual IRI="#alan"/>
+        <NamedIndividual IRI="#adminJob"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isAssigned"/>
+        <NamedIndividual IRI="#alan"/>
+        <NamedIndividual IRI="#role3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#worksFor"/>
+        <NamedIndividual IRI="#alan"/>
+        <NamedIndividual IRI="#marketing"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#worksIn"/>
+        <NamedIndividual IRI="#alan"/>
+        <NamedIndividual IRI="#liviTower"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasA"/>
+        <NamedIndividual IRI="#donald"/>
+        <NamedIndividual IRI="#softwareJob"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isAssigned"/>
+        <NamedIndividual IRI="#donald"/>
+        <NamedIndividual IRI="#role1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isAssigned"/>
+        <NamedIndividual IRI="#donald"/>
+        <NamedIndividual IRI="#role4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#worksFor"/>
+        <NamedIndividual IRI="#donald"/>
+        <NamedIndividual IRI="#eng"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#worksIn"/>
+        <NamedIndividual IRI="#donald"/>
+        <NamedIndividual IRI="#techPlaza"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasA"/>
+        <NamedIndividual IRI="#john"/>
+        <NamedIndividual IRI="#softwareJob"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isAssigned"/>
+        <NamedIndividual IRI="#john"/>
+        <NamedIndividual IRI="#role1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#worksFor"/>
+        <NamedIndividual IRI="#john"/>
+        <NamedIndividual IRI="#eng"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#worksIn"/>
+        <NamedIndividual IRI="#john"/>
+        <NamedIndividual IRI="#royalCollege"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasA"/>
+        <NamedIndividual IRI="#katherine"/>
+        <NamedIndividual IRI="#softwareJob"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isAssigned"/>
+        <NamedIndividual IRI="#katherine"/>
+        <NamedIndividual IRI="#role1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isAssigned"/>
+        <NamedIndividual IRI="#katherine"/>
+        <NamedIndividual IRI="#role4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#worksFor"/>
+        <NamedIndividual IRI="#katherine"/>
+        <NamedIndividual IRI="#eng"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#worksIn"/>
+        <NamedIndividual IRI="#katherine"/>
+        <NamedIndividual IRI="#royalCollege"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasA"/>
+        <NamedIndividual IRI="#lucy"/>
+        <NamedIndividual IRI="#softwareJob"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isAssigned"/>
+        <NamedIndividual IRI="#lucy"/>
+        <NamedIndividual IRI="#role5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#worksFor"/>
+        <NamedIndividual IRI="#lucy"/>
+        <NamedIndividual IRI="#eng"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#worksIn"/>
+        <NamedIndividual IRI="#lucy"/>
+        <NamedIndividual IRI="#royalCollege"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTask"/>
+        <NamedIndividual IRI="#member1"/>
+        <NamedIndividual IRI="#projTask3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isA"/>
+        <NamedIndividual IRI="#member1"/>
+        <NamedIndividual IRI="#donald"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isIn"/>
+        <NamedIndividual IRI="#member1"/>
+        <NamedIndividual IRI="#team1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTask"/>
+        <NamedIndividual IRI="#member2"/>
+        <NamedIndividual IRI="#projTask4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isA"/>
+        <NamedIndividual IRI="#member2"/>
+        <NamedIndividual IRI="#lucy"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isIn"/>
+        <NamedIndividual IRI="#member2"/>
+        <NamedIndividual IRI="#team1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTask"/>
+        <NamedIndividual IRI="#member3"/>
+        <NamedIndividual IRI="#projTask1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isA"/>
+        <NamedIndividual IRI="#member3"/>
+        <NamedIndividual IRI="#peter"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isIn"/>
+        <NamedIndividual IRI="#member3"/>
+        <NamedIndividual IRI="#team1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTask"/>
+        <NamedIndividual IRI="#member4"/>
+        <NamedIndividual IRI="#projTask2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isA"/>
+        <NamedIndividual IRI="#member4"/>
+        <NamedIndividual IRI="#raymond"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isIn"/>
+        <NamedIndividual IRI="#member4"/>
+        <NamedIndividual IRI="#team1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTask"/>
+        <NamedIndividual IRI="#member5"/>
+        <NamedIndividual IRI="#projTask3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isA"/>
+        <NamedIndividual IRI="#member5"/>
+        <NamedIndividual IRI="#katherine"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isIn"/>
+        <NamedIndividual IRI="#member5"/>
+        <NamedIndividual IRI="#team2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTask"/>
+        <NamedIndividual IRI="#member6"/>
+        <NamedIndividual IRI="#projTask1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isA"/>
+        <NamedIndividual IRI="#member6"/>
+        <NamedIndividual IRI="#lucy"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isIn"/>
+        <NamedIndividual IRI="#member6"/>
+        <NamedIndividual IRI="#team2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTask"/>
+        <NamedIndividual IRI="#member7"/>
+        <NamedIndividual IRI="#projTask4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isA"/>
+        <NamedIndividual IRI="#member7"/>
+        <NamedIndividual IRI="#john"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isIn"/>
+        <NamedIndividual IRI="#member7"/>
+        <NamedIndividual IRI="#team2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTask"/>
+        <NamedIndividual IRI="#member8"/>
+        <NamedIndividual IRI="#projTask2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isA"/>
+        <NamedIndividual IRI="#member8"/>
+        <NamedIndividual IRI="#michael"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isIn"/>
+        <NamedIndividual IRI="#member8"/>
+        <NamedIndividual IRI="#team2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasA"/>
+        <NamedIndividual IRI="#michael"/>
+        <NamedIndividual IRI="#softwareJob"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isAssigned"/>
+        <NamedIndividual IRI="#michael"/>
+        <NamedIndividual IRI="#role1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#worksFor"/>
+        <NamedIndividual IRI="#michael"/>
+        <NamedIndividual IRI="#eng"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#worksIn"/>
+        <NamedIndividual IRI="#michael"/>
+        <NamedIndividual IRI="#techPlaza"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasA"/>
+        <NamedIndividual IRI="#nikoli"/>
+        <NamedIndividual IRI="#adminJob"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isAssigned"/>
+        <NamedIndividual IRI="#nikoli"/>
+        <NamedIndividual IRI="#role2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#worksFor"/>
+        <NamedIndividual IRI="#nikoli"/>
+        <NamedIndividual IRI="#admin"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#worksIn"/>
+        <NamedIndividual IRI="#nikoli"/>
+        <NamedIndividual IRI="#liviTower"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasA"/>
+        <NamedIndividual IRI="#peter"/>
+        <NamedIndividual IRI="#softwareJob"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isAssigned"/>
+        <NamedIndividual IRI="#peter"/>
+        <NamedIndividual IRI="#role5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#worksFor"/>
+        <NamedIndividual IRI="#peter"/>
+        <NamedIndividual IRI="#eng"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#worksIn"/>
+        <NamedIndividual IRI="#peter"/>
+        <NamedIndividual IRI="#techPlaza"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCategory"/>
+        <NamedIndividual IRI="#proj1"/>
+        <NamedIndividual IRI="#cat1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCategory"/>
+        <NamedIndividual IRI="#proj2"/>
+        <NamedIndividual IRI="#cat2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCategory"/>
+        <NamedIndividual IRI="#proj3"/>
+        <NamedIndividual IRI="#cat3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#associatedWith"/>
+        <NamedIndividual IRI="#projRec1"/>
+        <NamedIndividual IRI="#proj1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has"/>
+        <NamedIndividual IRI="#projRec1"/>
+        <NamedIndividual IRI="#jan"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#storesInformationAbout"/>
+        <NamedIndividual IRI="#projRec1"/>
+        <NamedIndividual IRI="#projTask1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#associatedWith"/>
+        <NamedIndividual IRI="#projRec2"/>
+        <NamedIndividual IRI="#proj1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has"/>
+        <NamedIndividual IRI="#projRec2"/>
+        <NamedIndividual IRI="#may"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#storesInformationAbout"/>
+        <NamedIndividual IRI="#projRec2"/>
+        <NamedIndividual IRI="#projTask2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#associatedWith"/>
+        <NamedIndividual IRI="#projRec3"/>
+        <NamedIndividual IRI="#proj1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has"/>
+        <NamedIndividual IRI="#projRec3"/>
+        <NamedIndividual IRI="#mar"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#storesInformationAbout"/>
+        <NamedIndividual IRI="#projRec3"/>
+        <NamedIndividual IRI="#projTask3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#associatedWith"/>
+        <NamedIndividual IRI="#projRec4"/>
+        <NamedIndividual IRI="#proj1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has"/>
+        <NamedIndividual IRI="#projRec4"/>
+        <NamedIndividual IRI="#jun"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#storesInformationAbout"/>
+        <NamedIndividual IRI="#projRec4"/>
+        <NamedIndividual IRI="#projTask4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#associatedWith"/>
+        <NamedIndividual IRI="#projRec5"/>
+        <NamedIndividual IRI="#proj2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has"/>
+        <NamedIndividual IRI="#projRec5"/>
+        <NamedIndividual IRI="#aug"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#storesInformationAbout"/>
+        <NamedIndividual IRI="#projRec5"/>
+        <NamedIndividual IRI="#projTask1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#associatedWith"/>
+        <NamedIndividual IRI="#projRec6"/>
+        <NamedIndividual IRI="#proj2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has"/>
+        <NamedIndividual IRI="#projRec6"/>
+        <NamedIndividual IRI="#sept"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#storesInformationAbout"/>
+        <NamedIndividual IRI="#projRec6"/>
+        <NamedIndividual IRI="#projTask2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#associatedWith"/>
+        <NamedIndividual IRI="#projRec7"/>
+        <NamedIndividual IRI="#proj2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has"/>
+        <NamedIndividual IRI="#projRec7"/>
+        <NamedIndividual IRI="#oct"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#storesInformationAbout"/>
+        <NamedIndividual IRI="#projRec7"/>
+        <NamedIndividual IRI="#projTask3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#associatedWith"/>
+        <NamedIndividual IRI="#projRec8"/>
+        <NamedIndividual IRI="#proj2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has"/>
+        <NamedIndividual IRI="#projRec8"/>
+        <NamedIndividual IRI="#nov"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#storesInformationAbout"/>
+        <NamedIndividual IRI="#projRec8"/>
+        <NamedIndividual IRI="#projTask4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasA"/>
+        <NamedIndividual IRI="#raymond"/>
+        <NamedIndividual IRI="#softwareJob"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isAssigned"/>
+        <NamedIndividual IRI="#raymond"/>
+        <NamedIndividual IRI="#role1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#worksFor"/>
+        <NamedIndividual IRI="#raymond"/>
+        <NamedIndividual IRI="#eng"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#worksIn"/>
+        <NamedIndividual IRI="#raymond"/>
+        <NamedIndividual IRI="#techPlaza"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasAProject"/>
+        <NamedIndividual IRI="#team1"/>
+        <NamedIndividual IRI="#proj1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasManager"/>
+        <NamedIndividual IRI="#team1"/>
+        <NamedIndividual IRI="#donald"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasAProject"/>
+        <NamedIndividual IRI="#team2"/>
+        <NamedIndividual IRI="#proj2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasManager"/>
+        <NamedIndividual IRI="#team2"/>
+        <NamedIndividual IRI="#katherine"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#employee_id"/>
+        <NamedIndividual IRI="#ada"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">bd506395-5669-47d6-8fd5-28dd4fa600ed</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#ada"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Ada Lovelace</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#department_id"/>
+        <NamedIndividual IRI="#admin"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#department_name"/>
+        <NamedIndividual IRI="#admin"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Admin</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#job_id"/>
+        <NamedIndividual IRI="#adminJob"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#job_type"/>
+        <NamedIndividual IRI="#adminJob"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Admin</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#employee_id"/>
+        <NamedIndividual IRI="#alan"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">e3f9767a-a559-48e9-9f7a-ba22dae94950</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#alan"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Alan Turing</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#month_id"/>
+        <NamedIndividual IRI="#apr"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#month_name"/>
+        <NamedIndividual IRI="#apr"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">April</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#month_id"/>
+        <NamedIndividual IRI="#aug"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#month_name"/>
+        <NamedIndividual IRI="#aug"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">August</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#category_id"/>
+        <NamedIndividual IRI="#cat1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#category_name"/>
+        <NamedIndividual IRI="#cat1"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Educational Software</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#category_id"/>
+        <NamedIndividual IRI="#cat2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#category_name"/>
+        <NamedIndividual IRI="#cat2"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Enterprise Software</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#category_id"/>
+        <NamedIndividual IRI="#cat3"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#category_name"/>
+        <NamedIndividual IRI="#cat3"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Healthcare Software</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#month_id"/>
+        <NamedIndividual IRI="#dec"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">12</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#month_name"/>
+        <NamedIndividual IRI="#dec"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">December</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#employee_id"/>
+        <NamedIndividual IRI="#donald"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">197a15a8-e9c7-47a3-9427-129be93b05f2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#donald"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Donald Chamberlin</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#department_id"/>
+        <NamedIndividual IRI="#eng"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#department_name"/>
+        <NamedIndividual IRI="#eng"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Engineering</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#month_id"/>
+        <NamedIndividual IRI="#feb"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#month_name"/>
+        <NamedIndividual IRI="#feb"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">February</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#department_id"/>
+        <NamedIndividual IRI="#hr"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#department_name"/>
+        <NamedIndividual IRI="#hr"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">HR</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#month_id"/>
+        <NamedIndividual IRI="#jan"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#month_name"/>
+        <NamedIndividual IRI="#jan"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">January</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#employee_id"/>
+        <NamedIndividual IRI="#john"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">7ee3b93b-0232-4c47-bcf8-a22e4aadcdad</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#john"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">John Carmichael</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#month_id"/>
+        <NamedIndividual IRI="#jul"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">7</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#month_name"/>
+        <NamedIndividual IRI="#jul"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">July</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#month_id"/>
+        <NamedIndividual IRI="#jun"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#month_name"/>
+        <NamedIndividual IRI="#jun"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">June</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#employee_id"/>
+        <NamedIndividual IRI="#katherine"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">0dd9255b-8178-46c1-9842-341474cd18bf</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#katherine"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Katherine Jones</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#office_id"/>
+        <NamedIndividual IRI="#liviTower"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#office_location"/>
+        <NamedIndividual IRI="#liviTower"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Livi Tower</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#office_number"/>
+        <NamedIndividual IRI="#liviTower"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">839</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#employee_id"/>
+        <NamedIndividual IRI="#lucy"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">2d44de0c-e3cd-436c-90b4-75c9b94cb464</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#lucy"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Lucy Bain</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#month_id"/>
+        <NamedIndividual IRI="#mar"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#month_name"/>
+        <NamedIndividual IRI="#mar"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">March</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#department_id"/>
+        <NamedIndividual IRI="#marketing"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#department_name"/>
+        <NamedIndividual IRI="#marketing"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Marketing</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#month_id"/>
+        <NamedIndividual IRI="#may"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#month_name"/>
+        <NamedIndividual IRI="#may"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">May</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#employee_id"/>
+        <NamedIndividual IRI="#michael"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">f0629e8d-2569-4ca6-b5c9-4bd75cf6bacc</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#michael"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Michael Bubble</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#employee_id"/>
+        <NamedIndividual IRI="#nikoli"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">8d2687fc-beda-41b4-8b42-a19d0b4f404f</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#nikoli"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Nikoli Tesla</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#month_id"/>
+        <NamedIndividual IRI="#nov"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">11</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#month_name"/>
+        <NamedIndividual IRI="#nov"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">November</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#month_id"/>
+        <NamedIndividual IRI="#oct"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">10</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#month_name"/>
+        <NamedIndividual IRI="#oct"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">October</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#employee_id"/>
+        <NamedIndividual IRI="#peter"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">9ba48d84-9eb8-41a9-9229-2859719421d2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#peter"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Peter Kay</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#project_id"/>
+        <NamedIndividual IRI="#proj1"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">1c61798c-ece2-4484-b27d-d97c1a4f1c27</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#project_name"/>
+        <NamedIndividual IRI="#proj1"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Cerberus</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#project_type_name"/>
+        <NamedIndividual IRI="#proj1"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Web App</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#project_id"/>
+        <NamedIndividual IRI="#proj2"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">a073c644-39bc-4629-bbe9-b4329d4e8c07</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#project_name"/>
+        <NamedIndividual IRI="#proj2"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Magnolia</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#project_type_name"/>
+        <NamedIndividual IRI="#proj2"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Desktop App</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#project_id"/>
+        <NamedIndividual IRI="#proj3"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">a2d16aad-e228-4f29-af65-bc48a65b9231</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#project_name"/>
+        <NamedIndividual IRI="#proj3"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Jupiter</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#project_type_name"/>
+        <NamedIndividual IRI="#proj3"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Mobile App</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#completion_percentage"/>
+        <NamedIndividual IRI="#projRec1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">100</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#project_record_id"/>
+        <NamedIndividual IRI="#projRec1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#completion_percentage"/>
+        <NamedIndividual IRI="#projRec2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">40</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#project_record_id"/>
+        <NamedIndividual IRI="#projRec2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#completion_percentage"/>
+        <NamedIndividual IRI="#projRec3"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">30</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#project_record_id"/>
+        <NamedIndividual IRI="#projRec3"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#completion_percentage"/>
+        <NamedIndividual IRI="#projRec4"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">10</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#project_record_id"/>
+        <NamedIndividual IRI="#projRec4"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#completion_percentage"/>
+        <NamedIndividual IRI="#projRec5"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">80</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#project_record_id"/>
+        <NamedIndividual IRI="#projRec5"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#completion_percentage"/>
+        <NamedIndividual IRI="#projRec6"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">30</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#project_record_id"/>
+        <NamedIndividual IRI="#projRec6"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#completion_percentage"/>
+        <NamedIndividual IRI="#projRec7"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">75</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#project_record_id"/>
+        <NamedIndividual IRI="#projRec7"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">7</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#completion_percentage"/>
+        <NamedIndividual IRI="#projRec8"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">45</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#project_record_id"/>
+        <NamedIndividual IRI="#projRec8"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#task_id"/>
+        <NamedIndividual IRI="#projTask1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#task_name"/>
+        <NamedIndividual IRI="#projTask1"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Frontend Design</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#task_weight"/>
+        <NamedIndividual IRI="#projTask1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#task_id"/>
+        <NamedIndividual IRI="#projTask2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#task_name"/>
+        <NamedIndividual IRI="#projTask2"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Frontend Development</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#task_weight"/>
+        <NamedIndividual IRI="#projTask2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#task_id"/>
+        <NamedIndividual IRI="#projTask3"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#task_name"/>
+        <NamedIndividual IRI="#projTask3"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Backend Design</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#task_weight"/>
+        <NamedIndividual IRI="#projTask3"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#task_id"/>
+        <NamedIndividual IRI="#projTask4"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#task_name"/>
+        <NamedIndividual IRI="#projTask4"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Backend Development</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#task_weight"/>
+        <NamedIndividual IRI="#projTask4"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#employee_id"/>
+        <NamedIndividual IRI="#raymond"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">cd95b2ef-29ff-4b4c-9ede-dee8539c1a4b</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#raymond"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Raymond Boyce</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#role_id"/>
+        <NamedIndividual IRI="#role1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#role_name"/>
+        <NamedIndividual IRI="#role1"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Software Developer</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#role_id"/>
+        <NamedIndividual IRI="#role2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#role_name"/>
+        <NamedIndividual IRI="#role2"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Administrator</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#role_id"/>
+        <NamedIndividual IRI="#role3"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#role_name"/>
+        <NamedIndividual IRI="#role3"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Head of Finance</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#role_id"/>
+        <NamedIndividual IRI="#role4"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#role_name"/>
+        <NamedIndividual IRI="#role4"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Project Manager</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#role_id"/>
+        <NamedIndividual IRI="#role5"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#role_name"/>
+        <NamedIndividual IRI="#role5"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">UI UX Developer</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#office_id"/>
+        <NamedIndividual IRI="#royalCollege"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#office_location"/>
+        <NamedIndividual IRI="#royalCollege"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Royal College</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#office_number"/>
+        <NamedIndividual IRI="#royalCollege"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">8181</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#month_id"/>
+        <NamedIndividual IRI="#sept"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">9</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#month_name"/>
+        <NamedIndividual IRI="#sept"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">September</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#job_id"/>
+        <NamedIndividual IRI="#softwareJob"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#job_type"/>
+        <NamedIndividual IRI="#softwareJob"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Software</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#team_id"/>
+        <NamedIndividual IRI="#team1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#team_id"/>
+        <NamedIndividual IRI="#team2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#office_id"/>
+        <NamedIndividual IRI="#techPlaza"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#office_location"/>
+        <NamedIndividual IRI="#techPlaza"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Tech Plaza</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#office_number"/>
+        <NamedIndividual IRI="#techPlaza"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">317</Literal>
+    </DataPropertyAssertion>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#composedOf"/>
+        <ObjectProperty IRI="#isIn"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasAProject"/>
+        <ObjectProperty IRI="#isAssignedTo"/>
+    </InverseObjectProperties>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#associatedWith"/>
+        <Class IRI="#ProjectRecord"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#composedOf"/>
+        <Class IRI="#Team"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#has"/>
+        <Class IRI="#ProjectRecord"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasA"/>
+        <Class IRI="#Employee"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasAProject"/>
+        <Class IRI="#Team"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasCategory"/>
+        <Class IRI="#Project"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasManager"/>
+        <Class IRI="#Team"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasTask"/>
+        <Class IRI="#TeamMember"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isA"/>
+        <Class IRI="#TeamMember"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isAssigned"/>
+        <Class IRI="#Employee"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isAssignedTo"/>
+        <Class IRI="#Project"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isIn"/>
+        <Class IRI="#TeamMember"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#storesInformationAbout"/>
+        <Class IRI="#ProjectRecord"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#worksFor"/>
+        <Class IRI="#Employee"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#worksIn"/>
+        <Class IRI="#Employee"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#associatedWith"/>
+        <Class IRI="#Project"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#composedOf"/>
+        <Class IRI="#TeamMember"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has"/>
+        <Class IRI="#Month"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasA"/>
+        <Class IRI="#Job"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasAProject"/>
+        <Class IRI="#Project"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasCategory"/>
+        <Class IRI="#ProjectCategory"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasManager"/>
+        <Class IRI="#Employee"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasTask"/>
+        <Class IRI="#ProjectTask"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isA"/>
+        <Class IRI="#Employee"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isAssigned"/>
+        <Class IRI="#Role"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isAssignedTo"/>
+        <Class IRI="#Team"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isIn"/>
+        <Class IRI="#Team"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#storesInformationAbout"/>
+        <Class IRI="#ProjectTask"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#worksFor"/>
+        <Class IRI="#Department"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#worksIn"/>
+        <Class IRI="#Office"/>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="#category_id"/>
+        <Class IRI="#ProjectCategory"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#category_name"/>
+        <Class IRI="#ProjectCategory"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#completion_percentage"/>
+        <Class IRI="#ProjectRecord"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#department_id"/>
+        <Class IRI="#Department"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#department_name"/>
+        <Class IRI="#Department"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#employee_id"/>
+        <Class IRI="#Employee"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#job_id"/>
+        <Class IRI="#Job"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#job_type"/>
+        <Class IRI="#Job"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#month_id"/>
+        <Class IRI="#Month"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#month_name"/>
+        <Class IRI="#Month"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#name"/>
+        <Class IRI="#Employee"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#office_id"/>
+        <Class IRI="#Office"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#office_location"/>
+        <Class IRI="#Office"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#office_number"/>
+        <Class IRI="#Office"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#project_id"/>
+        <Class IRI="#Project"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#project_name"/>
+        <Class IRI="#Project"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#project_record_id"/>
+        <Class IRI="#ProjectRecord"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#project_type_name"/>
+        <Class IRI="#Project"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#role_id"/>
+        <Class IRI="#Role"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#role_name"/>
+        <Class IRI="#Role"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#task_id"/>
+        <Class IRI="#ProjectTask"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#task_name"/>
+        <Class IRI="#ProjectTask"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#task_weight"/>
+        <Class IRI="#ProjectTask"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#team_id"/>
+        <Class IRI="#Team"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#type_id"/>
+        <Class IRI="#Project"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#category_id"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#category_name"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#completion_percentage"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#department_id"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#department_name"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#employee_id"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#job_id"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#job_type"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#month_id"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#month_name"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#name"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#office_id"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#office_location"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#office_number"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#project_id"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#project_name"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#project_record_id"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#project_type_name"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#role_id"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#role_name"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#task_id"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#task_name"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#task_weight"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#team_id"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#type_id"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.2.5.20160517-0735) https://github.com/owlcs/owlapi -->
+

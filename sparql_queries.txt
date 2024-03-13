@@ -1,0 +1,98 @@
+# Business Requirement 1. List the ID and name of all employees
+
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX sh: <http://www.semanticweb.org/aleja/ontologies/2024/2/untitled-ontology-7#>
+
+SELECT ?employeeID ?employeeName
+WHERE {
+  ?employee a sh:Employee ;
+           sh:name ?employeeName ;
+           sh:employee_id ?employeeID .
+}
+
+
+# Business Requirement 2. List the name of all projects together with their type.
+
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX sh: <http://www.semanticweb.org/aleja/ontologies/2024/2/untitled-ontology-7#>
+
+SELECT ?projectID ?projectName ?projectType
+WHERE {
+  ?project a sh:Project ;
+           sh:project_name ?projectName ;
+           sh:project_id ?projectID;
+sh:project_type_name ?projectType;
+
+}
+
+# Business Requirement 3. List the ID and name of all employees together with the project name and project category that they work on.
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX sh: <http://www.semanticweb.org/aleja/ontologies/2024/2/untitled-ontology-7#>
+
+SELECT ?employeeID ?employeeName ?projectName ?projectCategory
+WHERE {
+  ?teams rdf:type sh:Team ;
+        sh:hasAProject ?project ;
+        sh:composedOf ?teamMembers .
+
+  ?teamMembers sh:isA ?employee .
+
+  ?employee sh:name ?employeeName ;
+            sh:employee_id ?employeeID .
+
+  ?project sh:project_name ?projectName ;
+           sh:hasCategory ?category .
+
+  ?category sh:category_name ?projectCategory .
+}
+
+
+# Business Requirement 4. List the ID and name of all tasks together with the name and ID of the employee who works on this task
+
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX sh: <http://www.semanticweb.org/aleja/ontologies/2024/2/untitled-ontology-7#>
+
+SELECT ?taskID ?taskName ?employeeID ?employeeName
+WHERE {
+    ?teamMember sh:hasTask ?task ;
+                sh:isA ?employee .
+
+    ?task sh:task_name ?taskName ;
+          sh:task_id ?taskID .
+
+    ?employee sh:employee_id ?employeeID ;
+              sh:name ?employeeName .
+}
+ORDER BY ASC(?taskID)
+
+
+
+# Business Requirement 5. List the ID and name of all employees together with the office number that they are based in.
+
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX sh: <http://www.semanticweb.org/aleja/ontologies/2024/2/untitled-ontology-7#>
+
+SELECT  ?employeeID ?employeeName  ?officeNumber
+WHERE {
+  ?employee rdf:type sh:Employee ;
+            sh:employee_id ?employeeID ;
+            sh:name ?employeeName ;
+            sh:worksIn ?office .
+
+  ?office  sh:office_number ?officeNumber .
+}
