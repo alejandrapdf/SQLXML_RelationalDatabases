@@ -1,0 +1,3 @@
+*.sql linguist-language=SQL
+*.xml linguist-language=XML
+*.owl linguist-language=RDF
