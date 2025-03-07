@@ -1,93 +1,168 @@
-# cis549group11
+# Employee Database Mapping Project
 
+This project involves designing and managing a relational database for an employee management system. The focus is on mapping employees to their places of work, departments, and related entities. It covers various aspects of database design, including Entity-Relationship Diagrams (ERD), SQL queries, XML file creation, XML Schema (DTD), and query languages like XPath and XQuery. Below is a detailed overview of the project's requirements and the corresponding technical approaches used.
 
+## Project Overview
 
-## Getting started
+The project aims to create a comprehensive database system to manage employee data, including the following core elements:
+- **Employee Information**: Personal details like name, ID, and contact information.
+- **Department Information**: Details about departments within an organization, such as department name, location, and department head.
+- **Workplace Information**: Locations and buildings where employees work, including office address and work schedules.
+- **Relationships**: The associations between employees, departments, and workplaces.
 
-To make it easy for you to get started with GitLab, here's a list of recommended next steps.
+---
 
-Already a pro? Just edit this README.md and make it your own. Want to make it easy? [Use the template at the bottom](#editing-this-readme)!
+## Technologies and Concepts Used
 
-## Add your files
+### 1. Entity Relationship Diagram (ERD)
 
-- [ ] [Create](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#create-a-file) or [upload](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#upload-a-file) files
-- [ ] [Add files using the command line](https://docs.gitlab.com/ee/gitlab-basics/add-file.html#add-a-file-using-the-command-line) or push an existing Git repository with the following command:
+The Entity Relationship Diagram (ERD) was created to represent the structure of the employee database visually. The diagram shows the relationships between entities, such as employees, departments, and workplaces.
 
+- **Entities**:
+  - **Employee**: Employee ID, name, contact information.
+  - **Department**: Department ID, name, location.
+  - **Workplace**: Workplace ID, address, work schedule.
+  
+- **Relationships**:
+  - Employees are assigned to departments.
+  - Employees work at specific workplaces.
+  
+This ERD was the foundation of the database schema and helped in generating the corresponding SQL queries.
+
+---
+
+### 2. SQL Statements
+
+To implement the ERD, we wrote the necessary SQL statements to create tables and establish relationships between them. Here are the key SQL tasks involved:
+
+- **Create Tables**: Define the structure of each entity, including constraints like primary and foreign keys.
+- **Insert Data**: Populate the tables with sample data for employees, departments, and workplaces.
+- **Retrieve Data**: Write SELECT queries to fetch information based on certain conditions.
+
+Example SQL for creating the `Employee` table:
+```sql
+CREATE TABLE Employee (
+    EmployeeID INT PRIMARY KEY,
+    FirstName VARCHAR(50),
+    LastName VARCHAR(50),
+    DepartmentID INT,
+    WorkplaceID INT,
+    FOREIGN KEY (DepartmentID) REFERENCES Department(DepartmentID),
+    FOREIGN KEY (WorkplaceID) REFERENCES Workplace(WorkplaceID)
+);
 ```
-cd existing_repo
-git remote add origin https://gitlab.cis.strath.ac.uk/jwb19113/cis549group11.git
-git branch -M main
-git push -uf origin main
+
+---
+
+### 3. SQL SELECT Statements
+
+We wrote various SQL SELECT queries to retrieve employee-related data. For example:
+
+- **Fetch all employees in a particular department**:
+```sql
+SELECT * FROM Employee
+WHERE DepartmentID = 2;
 ```
 
-## Integrate with your tools
+- **Find employees working at a specific workplace**:
+```sql
+SELECT * FROM Employee
+WHERE WorkplaceID = 3;
+```
 
-- [ ] [Set up project integrations](https://gitlab.cis.strath.ac.uk/jwb19113/cis549group11/-/settings/integrations)
+These SELECT statements were designed to fetch data based on the needs of the system.
 
-## Collaborate with your team
+---
 
-- [ ] [Invite team members and collaborators](https://docs.gitlab.com/ee/user/project/members/)
-- [ ] [Create a new merge request](https://docs.gitlab.com/ee/user/project/merge_requests/creating_merge_requests.html)
-- [ ] [Automatically close issues from merge requests](https://docs.gitlab.com/ee/user/project/issues/managing_issues.html#closing-issues-automatically)
-- [ ] [Enable merge request approvals](https://docs.gitlab.com/ee/user/project/merge_requests/approvals/)
-- [ ] [Set auto-merge](https://docs.gitlab.com/ee/user/project/merge_requests/merge_when_pipeline_succeeds.html)
+### 4. XML File Representation
 
-## Test and Deploy
+To demonstrate the mapping of relational tables to an XML file, we wrote XML files that represented the structure of the employee database.
 
-Use the built-in continuous integration in GitLab.
+Example of an XML file representing employees:
+```xml
+<employees>
+    <employee>
+        <employeeID>1</employeeID>
+        <firstName>John</firstName>
+        <lastName>Doe</lastName>
+        <departmentID>2</departmentID>
+        <workplaceID>3</workplaceID>
+    </employee>
+    <!-- More employee entries -->
+</employees>
+```
 
-- [ ] [Get started with GitLab CI/CD](https://docs.gitlab.com/ee/ci/quick_start/index.html)
-- [ ] [Analyze your code for known vulnerabilities with Static Application Security Testing (SAST)](https://docs.gitlab.com/ee/user/application_security/sast/)
-- [ ] [Deploy to Kubernetes, Amazon EC2, or Amazon ECS using Auto Deploy](https://docs.gitlab.com/ee/topics/autodevops/requirements.html)
-- [ ] [Use pull-based deployments for improved Kubernetes management](https://docs.gitlab.com/ee/user/clusters/agent/)
-- [ ] [Set up protected environments](https://docs.gitlab.com/ee/ci/environments/protected_environments.html)
+---
 
-***
+### 5. XML Tree Representation
 
-# Editing this README
+The XML tree represents the hierarchical structure of the data. The employee data is nested under the root `<employees>` element, with each `<employee>` containing sub-elements like `<employeeID>`, `<firstName>`, `<lastName>`, and references to other entities (department and workplace).
 
-When you're ready to make this README your own, just edit this file and use the handy template below (or feel free to structure it however you want - this is just a starting point!). Thanks to [makeareadme.com](https://www.makeareadme.com/) for this template.
+---
 
-## Suggestions for a good README
+### 6. XML Schema (DTD or XSD)
 
-Every project is different, so consider which of these sections apply to yours. The sections used in the template are suggestions for most open source projects. Also keep in mind that while a README can be too long and detailed, too long is better than too short. If you think your README is too long, consider utilizing another form of documentation rather than cutting out information.
+To define the structure of the XML file, we created an XML Schema Definition (XSD) or a Document Type Definition (DTD) to validate the XML structure.
 
-## Name
-Choose a self-explaining name for your project.
+Example XSD for employee data:
+```xml
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="employees">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="employee" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="employeeID" type="xs:int"/>
+                            <xs:element name="firstName" type="xs:string"/>
+                            <xs:element name="lastName" type="xs:string"/>
+                            <xs:element name="departmentID" type="xs:int"/>
+                            <xs:element name="workplaceID" type="xs:int"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
+```
 
-## Description
-Let people know what your project can do specifically. Provide context and add a link to any reference visitors might be unfamiliar with. A list of Features or a Background subsection can also be added here. If there are alternatives to your project, this is a good place to list differentiating factors.
+---
 
-## Badges
-On some READMEs, you may see small images that convey metadata, such as whether or not all the tests are passing for the project. You can use Shields to add some to your README. Many services also have instructions for adding a badge.
+### 7. XPath Queries
 
-## Visuals
-Depending on what you are making, it can be a good idea to include screenshots or even a video (you'll frequently see GIFs rather than actual videos). Tools like ttygif can help, but check out Asciinema for a more sophisticated method.
+XPath was used to navigate and extract specific data from the XML file. For example, to find the employee with a specific ID, we used the following XPath expression:
 
-## Installation
-Within a particular ecosystem, there may be a common way of installing things, such as using Yarn, NuGet, or Homebrew. However, consider the possibility that whoever is reading your README is a novice and would like more guidance. Listing specific steps helps remove ambiguity and gets people to using your project as quickly as possible. If it only runs in a specific context like a particular programming language version or operating system or has dependencies that have to be installed manually, also add a Requirements subsection.
+```xpath
+/employees/employee[employeeID='1']
+```
 
-## Usage
-Use examples liberally, and show the expected output if you can. It's helpful to have inline the smallest example of usage that you can demonstrate, while providing links to more sophisticated examples if they are too long to reasonably include in the README.
+This would return the `<employee>` element with the employeeID of 1.
 
-## Support
-Tell people where they can go to for help. It can be any combination of an issue tracker, a chat room, an email address, etc.
+---
 
-## Roadmap
-If you have ideas for releases in the future, it is a good idea to list them in the README.
+### 8. XQuery
 
-## Contributing
-State if you are open to contributions and what your requirements are for accepting them.
+XQuery was used to perform more complex queries on the XML data. For example, to find all employees from a specific department and workplace, we used:
 
-For people who want to make changes to your project, it's helpful to have some documentation on how to get started. Perhaps there is a script that they should run or some environment variables that they need to set. Make these steps explicit. These instructions could also be useful to your future self.
+```xquery
+for $emp in doc("employees.xml")//employee
+where $emp/departmentID = 2 and $emp/workplaceID = 3
+return $emp
+```
 
-You can also document commands to lint the code or run tests. These steps help to ensure high code quality and reduce the likelihood that the changes inadvertently break something. Having instructions for running tests is especially helpful if it requires external setup, such as starting a Selenium server for testing in a browser.
+This query returns the employee elements where both the departmentID and workplaceID match the specified values.
 
-## Authors and acknowledgment
-Show your appreciation to those who have contributed to the project.
+---
 
-## License
-For open source projects, say how it is licensed.
+## Conclusion
 
-## Project status
-If you have run out of energy or time for your project, put a note at the top of the README saying that development has slowed down or stopped completely. Someone may choose to fork your project or volunteer to step in as a maintainer or owner, allowing your project to keep going. You can also make an explicit request for maintainers.
+This project demonstrates the integration of multiple database-related technologies, including ERD design, SQL query writing, and XML processing (with XPath and XQuery). The goal was to map an employee database, capturing relationships between employees, departments, and workplaces, and representing this data in both relational and XML formats.
+
+By completing this project, we gained hands-on experience in:
+- Database design using ERDs
+- Writing SQL queries for data retrieval
+- Converting relational data to XML format
+- Using XML-related technologies such as XPath and XQuery
+
+This project provided a comprehensive understanding of both relational databases and XML technologies in real-world applications.
